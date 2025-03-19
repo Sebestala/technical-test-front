@@ -12,6 +12,11 @@ export default class MyDocument extends Document {
     return (
       <Html lang="fr">
         <Head>
+          <title>SuperShop - Votre boutique en ligne</title>
+          <meta
+            name="description"
+            content="Découvrez SuperShop, votre destination shopping en ligne avec une large sélection de produits de qualité. Livraison rapide et service client premium."
+          />
           {/* PWA primary color */}
           <meta
             name="theme-color"

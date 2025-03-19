@@ -1,34 +1,10 @@
 # SuperShop - E-commerce Frontend
 
-## 📝 Description
-
-SuperShop est une application e-commerce développée avec Next.js et Material-UI. Elle permet aux
-utilisateurs de parcourir des produits, les filtrer par catégorie, gérer un panier d'achats et une
-liste de souhaits.
-
-## 🚀 Fonctionnalités
-
-- Navigation et filtrage des produits par catégorie
-- Gestion du panier d'achats
-- Liste de souhaits
-- Système de notifications
-- Interface responsive
-- Gestion d'état avec Context API
-- Persistance des données dans le localStorage
-
-## 🛠 Technologies Utilisées
-
-- React 17
-- Next.js 12
-- Material-UI
-- Context API pour la gestion d'état
-- Local Storage pour la persistance
-
-## 📦 Installation
+## 📦 Installation et Démarrage
 
 ```bash
 # Cloner le repository
-git clone https://github.com/votre-username/technical-test-front.git
+git clone https://github.com/Sebestala/technical-test-front
 
 # Accéder au dossier
 cd technical-test-front
@@ -46,91 +22,34 @@ npm run build
 npm start
 ```
 
-## 🔄 Améliorations Proposées
+## 🚀 Fonctionnalités Implémentées
 
-### 1. Migration Technologique
+### Architecture et Structure
 
-- **Passage à pnpm**: Remplacer npm par pnpm pour une meilleure gestion des dépendances et des
-  performances d'installation
-- **Mise à jour vers Next.js 15**: Bénéficier des dernières fonctionnalités et améliorations de
-  performances
-- **Migration vers TypeScript**: Améliorer la maintenabilité et la sécurité du code
-- **Remplacement de Material-UI par Tailwind CSS**: Réduire la taille du bundle et améliorer les
-  performances
+- Mise en place d'une architecture basée sur Next.js 12 et React 17
+- Utilisation de Material-UI pour l'interface utilisateur
+- Gestion d'état avec Context API
+- Persistance des données avec localStorage
 
-### 2. Optimisations de Performance
+### Fonctionnalités E-commerce
 
-Actuellement, le score Lighthouse est de 38/100. Voici les améliorations proposées :
+- Navigation et filtrage des produits par catégorie
+- Système de panier d'achats complet
+- Gestion de liste de souhaits
+- Système de notifications pour les actions utilisateur
 
-- Implémentation du code splitting
-- Optimisation des images avec next/image
-- Lazy loading des composants non critiques
-- Réduction de la taille du bundle JavaScript
-- Mise en place d'une stratégie de cache efficace
-- Optimisation des Contexts React pour éviter les re-renders inutiles
+## 🔄 Améliorations Futures
 
-### 3. Qualité du Code
+### Migrations Majeures
 
-- Mise en place de tests unitaires avec Jest et React Testing Library
-- Intégration de tests E2E avec Cypress
-- Configuration de Storybook pour la documentation des composants
-- Ajout d'ESLint et Prettier avec des règles strictes
-- Mise en place de Husky pour les pre-commit hooks
+- Migration vers Next.js 15 et React 19 pour les dernières optimisations
+- Remplacement de npm par pnpm pour une meilleure gestion des dépendances
+- Migration de Material-UI vers Tailwind CSS pour de meilleures performances
+- Passage à TypeScript pour une meilleure maintenabilité
 
-### 4. Architecture et Organisation
+### Tests et Qualité de Code
 
-- Restructuration en architecture modulaire
-- Implémentation du pattern Container/Presenter
-- Séparation claire des responsabilités (services, hooks, utils)
-- Documentation approfondie avec JSDoc
-
-## 📋 Guide de Migration Recommandé
-
-1. **Migration vers pnpm**:
-
-```bash
-# Installer pnpm
-npm install -g pnpm
-
-# Supprimer node_modules et package-lock.json
-rm -rf node_modules package-lock.json
-
-# Installer avec pnpm
-pnpm install
-```
-
-2. **Migration vers Tailwind CSS**:
-
-```bash
-# Installer Tailwind
-pnpm add tailwindcss postcss autoprefixer
-
-# Initialiser Tailwind
-npx tailwindcss init -p
-```
-
-3. **Mise à jour vers Next.js 14**:
-
-```bash
-pnpm add next@latest react@latest react-dom@latest
-```
-
-## 🤝 Contribution
-
-Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou une pull request.
-
-## 📄 License
-
-MIT
-
-## 🔍 Notes de Performance Actuelles
-
-- First Contentful Paint: 0.5s
-- Largest Contentful Paint: 8.6s
-- Total Blocking Time: 2,920ms
-- Speed Index: 2.8s
-- JavaScript execution time: 3.3s
-- Bundle size: 6,666 KiB
-
-Ces métriques indiquent un besoin urgent d'optimisation, particulièrement au niveau du chargement
-initial et de l'exécution JavaScript.
+- Mise en place de tests unitaires (Jest + React Testing Library)
+- Ajout de tests E2E avec Cypress
+- Configuration de Storybook
+- Intégration d'ESLint et Prettier
